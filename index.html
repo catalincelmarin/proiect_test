@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+    <meta charset="UTF-8" />
+    <title>My Project</title>
+    <script src="https://kit.fontawesome.com/1944befa22.js" type="text/javascript"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet"/>
+    <script src="./js/glfx.js-master/glfx.js" rel="t"></script>
+    <script src="./js/main.js" type="text/javascript"></script>
+</head>
+<body>
+    <div id="app">
+        <div class="screen">
+            <div class="container">
+                <div class="row" id="header">
+                    <div class="col-2 border-right-3 border-left-3 border-bottom-2 text-center"><b>19:30</b></div>
+                    <div class="col-4 border-bottom-2 border-right-3">&nbsp;<b>RAD</b> <i class="fas fa-biohazard" style="color: yellowgreen"></i>:
+                        <div  class="bioh"></div>
+                    </div>
+                    <div class="col-5 border-bottom-2">
+                        &nbsp;<i class="fa fa-heart" style="color: #CF0000"></i>&nbsp;
+                        <div class="life"></div>
+                    </div>
+                    <div class="col-1 border-right-3 border-left-3 border-bottom-2 text-center"><i class="fas fa-battery-full fa-1x"></i></div>
+                </div>
+                <div class="row">
+                    <div class="col-12" id="main">
+                        <div id="inventory" class="container" >
+                            <div class="row" style="display: flex; height: 80vh">
+                                <div class="col-12" style="border: solid #CF0000 1px">
+                                    <img src="./assets/me.jpg" id="image" style="display: none">
+                                    <canvas id="canvas" style="height: auto; width: auto;"></canvas>
+                                    <input id="myFileInput" type="file" accept="image/*;capture=camera">
+                                    <img src="" id="testimg"/>
+                                    <div id="output"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" id="footer">
+                    <div class="col-3">
+                        <a href="#"><i class="fas fa-box-open fa-3x"></i> </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><i class="fas fa-tools fa-3x"></i> </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><i class="fas fa-user-astronaut fa-3x"></i> </a>
+                    </div>
+                    <div class="col-3">
+                        <a href="#"><i class="fas fa-road fa-3x"></i> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="target" class="target">
+        <div class="center"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3 @@
+@mixin border($place,$width) {
+  border-#{$place} : solid $radio-green $width;
+}

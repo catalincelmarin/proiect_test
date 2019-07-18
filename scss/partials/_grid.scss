@@ -1,0 +1,30 @@
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  .row {
+    @include clearfix();
+
+    [class*="col-"] {
+      display: block;
+      float: left;
+    }
+    @for $i from 1 through $columns {
+      .col-#{$i} {
+          padding: 0.1em;
+          width: $i*$col-size + 0%;
+
+      }
+    }
+  }
+}

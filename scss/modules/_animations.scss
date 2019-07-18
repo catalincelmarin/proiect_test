@@ -1,0 +1,46 @@
+@keyframes grow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.5);
+    background-color: #CF0000;
+    border-color:#CF0000;
+  }
+}
+
+
+@keyframes colorPulse {
+  0%, 100% {
+    color:#01CC61;
+  }
+  48%, 52% {
+    color:#5db788;
+  }
+  50% {
+    color:#01CC61;
+  }
+}
+
+@keyframes wave {
+  0% {
+    box-shadow:0 -5vh 10vh #0c0;
+    top:-100vh;
+  }
+  48%, 52% {
+    box-shadow:0 -5vh 10vh #8dbaa2;
+  }
+  50% {
+    box-shadow:0 -5vh 10vh #5db788;
+  }
+  100% {
+    box-shadow:0 -5vh 10vh #5db788;
+    top:200vh;
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity:0;
+  }
+}

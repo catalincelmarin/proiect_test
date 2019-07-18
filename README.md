@@ -1,2 +1,1 @@
-# proiect_test
-Proiectul meu
+# myproject
